@@ -14,6 +14,22 @@ Copy it to an Android phone, open it, and allow installation from that source
 when Android asks. This is a debug-signed APK intended for private testing, not
 Play Store distribution.
 
+## Download a fresh APK from GitHub
+
+The GitHub Actions workflow builds a fresh APK whenever `main` is updated. You
+can also start it manually:
+
+1. Open the repository on GitHub and select **Actions**.
+2. Select **Build Android APK**.
+3. Select **Run workflow**, keep the `main` branch selected, and confirm.
+4. Open the completed run and download **Fake-GPS-by-Horlakz-debug** from the
+   **Artifacts** section.
+5. Extract the downloaded ZIP to get `Fake-GPS-by-Horlakz-debug.apk`.
+
+GitHub keeps this build artifact for 30 days. The APK is debug-signed and can
+be shared with another Android tester, who must complete the same mock-location
+setup below.
+
 ## One-time phone setup
 
 1. Open **Settings → About phone → Software information**.
